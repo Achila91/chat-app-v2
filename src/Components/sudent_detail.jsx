@@ -8,7 +8,9 @@ function SudentDetail(props) {
 
   const deleteHandler = () => {
     axios
-      .delete(`http://localhost:8000/detail/student/remove/${id}`)
+      .delete(
+        `https://achila-chat-app-v2.herokuapp.com/detail/student/remove/${id}`
+      )
       .then(() => {
         alert("Done");
         window.location.reload(false);
