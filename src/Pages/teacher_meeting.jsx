@@ -98,7 +98,7 @@ function Meeting(props) {
         {active ? (
           <a
             style={{ textDecoration: "none" }}
-            href={`http://localhost:3000/meeting-page/${props.id}`}
+            href={`https://achila-chat-app-v2.herokuapp.com/meeting-page/${props.id}`}
           >
             <div
               style={{
