@@ -1,0 +1,104 @@
+*{margin:0;padding:0}
+
+.dash-main-container{
+    width: 100%;
+    height:100vh;
+    display: block;
+}
+.dash-body-wrapper{
+    width: 100%;
+}
+.dash-body-details-wrapper{
+    width:80%;
+    margin:auto;
+    height:100px;
+}
+.dash-body-student-add-wrapper{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    margin-top: 20px; 
+    margin-bottom: 10px;
+}
+.dash-body-student-add-form{
+    width: 80%;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    margin-top: 10px; 
+    background-color: rgb(228, 228, 228);
+    border-radius: 5px;
+}
+.student-form-inputs{
+    width: 20%;
+    height: 25px;
+    padding-left: 5px;
+    margin-left: 10px;
+    margin-top: 20px;
+    border: 1px solid rgb(140, 140, 140);
+    border-radius: 5px;
+}
+.student-form-btn{
+    width: 10%;
+    height: 28px;
+    padding-left: 5px;
+    margin-left: 5px;
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #284b63de;
+    color: white;
+    border: 1px solid white;
+}
+.student-details-table-header{
+    width: 90%;
+    height: 30px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: #284B63;
+    display: flex;
+    padding-top:12px;
+    padding-bottom:2px;
+    border-radius: 5px;
+}
+.student-details-table-body{
+    width: 90%;
+    margin: auto;
+        padding-bottom:20px
+}
+.student-details-table-header-name{
+    width: 25%;
+    height: 25px;
+    text-align: center;
+     color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.student-details-table-header-contact{
+    width: 15%;
+    height: 25px;
+    text-align: center;
+     color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.student-details-table-header-email{
+    width: 40%;
+    height: 25px;
+    text-align: center;
+     color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.student-details-table-header-password{
+    width: 10%;
+    height: 25px;
+    text-align: center;
+     color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.student-details-table-header-action{
+    width: 10%;
+    height: 25px;
+    text-align: center;
+     color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

@@ -1,0 +1,45 @@
+.time-details-body-row{
+    width: 100%;
+    height: 30px;
+    margin: auto;
+    margin-top:5px;
+    background-color: #E4E4E4;
+    display: flex;
+    padding-top:10px;
+ 
+}
+.time-details-table-body-date{
+    width: 20%;
+    height: 25px;
+    text-align: center;
+     color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.time-details-table-body-time{
+    width: 20%;
+    height: 25px;
+    text-align: center;
+     color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.time-details-table-body-link{
+    max-width: 50%;
+    min-width: 50%;
+    height: 25px;
+    text-align: center;
+     
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer
+}
+ 
+.time-details-table-body-action{
+    width: 10%;
+    height: 25px;
+    text-align: center;
+     color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

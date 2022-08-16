@@ -1,0 +1,46 @@
+.student-details-body-row{
+    width: 100%;
+    height: 30px;
+    margin: auto;
+    margin-top:5px;
+    background-color: #E4E4E4;
+    display: flex;
+    padding-top:10px;
+ 
+}
+.student-details-table-body-name{
+    width: 25%;
+    height: 25px;
+    text-align: center;
+     color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.student-details-table-body-contact{
+    width: 15%;
+    height: 25px;
+    text-align: center;
+     color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.student-details-table-body-email{
+    width: 40%;
+    height: 25px;
+    text-align: center;
+     color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.student-details-table-body-password{
+    width: 10%;
+    height: 25px;
+    text-align: center;
+     color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.student-details-table-body-action{
+    width: 10%;
+    height: 25px;
+    text-align: center;
+     color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
