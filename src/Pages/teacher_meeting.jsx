@@ -8,7 +8,9 @@ function TeacherMeeting() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8000/detail/meeting/${name}`)
+      .get(
+        `https://chat-app-v2-node-backend.herokuapp.com/detail/meeting/${name}`
+      )
       .then((res) => {
         setDetails(res.data);
       })
@@ -53,14 +55,13 @@ export default TeacherMeeting;
 
 function Meeting(props) {
   const today = new Date();
-  const time = today.getHours() + ":" + (today.getMinutes()+2);
+  const time = today.getHours() + ":" + (today.getMinutes() + 2);
   const [active, setActive] = useState(false);
-    
+
   useEffect(() => {
     if (time.toString() >= props.time) {
       setActive(true);
     }
-
   }, [time, props.time]);
 
   return (

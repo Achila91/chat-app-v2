@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "../Css/teacher_student_details.css";
 import NavBar from "../Components/navBar";
 import AddBoxIcon from "@mui/icons-material/AddBox";
@@ -6,15 +6,15 @@ import SudentDetail from "../Components/sudent_detail";
 import axios from "axios";
 
 function TeacherStudentDetails() {
-  const [active, isActive] = useState(false)
-  const [name, setName] = useState("")
-  const [contact, setContact] = useState("")
-  const [email, setEmail] = useState("")
-  const [password, setPassword] = useState("")
-   const [found, setFound] = useState("")
-  const teacherName= localStorage.getItem("username")
-  const [details, setDetails] = useState([])
-  const type = "student"
+  const [active, isActive] = useState(false);
+  const [name, setName] = useState("");
+  const [contact, setContact] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [found, setFound] = useState("");
+  const teacherName = localStorage.getItem("username");
+  const [details, setDetails] = useState([]);
+  const type = "student";
 
   const info = {
     name,
@@ -22,7 +22,7 @@ function TeacherStudentDetails() {
     email,
     teacherName,
     password,
-    type
+    type,
   };
 
   console.log(teacherName);
@@ -42,7 +42,10 @@ function TeacherStudentDetails() {
       alert("All feilds required!");
     } else {
       axios
-        .post("http://localhost:8000/detail/student/save", info)
+        .post(
+          "https://chat-app-v2-node-backend.herokuapp.com/detail/student/save",
+          info
+        )
         .then(() => {
           alert("Done");
           window.location.reload(false);
@@ -53,26 +56,24 @@ function TeacherStudentDetails() {
     }
   };
 
-
   useEffect(() => {
     axios
-      .get("http://localhost:8000/detail/students")
+      .get("https://chat-app-v2-node-backend.herokuapp.com/detail/students")
       .then((res) => {
         setDetails(res.data);
       })
       .catch((err) => {
         alert(err);
       });
-    
-  }, [])
-  
-    const students = details.filter((data) => {
-      return (
-        data.username.toLowerCase().includes(found.toLowerCase()) ||
-        data.contact.toLowerCase().includes(found.toLowerCase()) ||
-        data.email.toLowerCase().includes(found.toLowerCase())
-      );
-    });
+  }, []);
+
+  const students = details.filter((data) => {
+    return (
+      data.username.toLowerCase().includes(found.toLowerCase()) ||
+      data.contact.toLowerCase().includes(found.toLowerCase()) ||
+      data.email.toLowerCase().includes(found.toLowerCase())
+    );
+  });
 
   return (
     <div className="dash-main-container">
@@ -149,7 +150,9 @@ function TeacherStudentDetails() {
               marginTop: "20px",
               marginLeft: "5%",
             }}
-            onChange={(e)=>{setFound(e.target.value);}}
+            onChange={(e) => {
+              setFound(e.target.value);
+            }}
           />
           <div className="student-details-table-header">
             <div className="student-details-table-header-name">Name</div>

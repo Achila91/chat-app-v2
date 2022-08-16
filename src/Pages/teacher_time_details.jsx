@@ -23,7 +23,7 @@ function TeacherTimeDetails() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8000/detail/times")
+      .get("https://chat-app-v2-node-backend.herokuapp.com/detail/times")
       .then((res) => {
         setDetails(res.data);
       })
@@ -46,7 +46,10 @@ function TeacherTimeDetails() {
       alert("All feilds required!");
     } else {
       axios
-        .post("http://localhost:8000/detail/time/save", info)
+        .post(
+          "https://chat-app-v2-node-backend.herokuapp.com/detail/time/save",
+          info
+        )
         .then(() => {
           alert("Done");
           window.location.reload(false);

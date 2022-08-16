@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import dbref, { conectedRef } from "../Utilites/firebase";
-import axios from 'axios';
+import axios from "axios";
 import { useParams } from "react-router-dom";
 import { connect } from "react-redux";
 import {
@@ -30,15 +30,18 @@ const Meeting_page = (props) => {
   //     window.history.replaceState(null, "meeting-page", "?id=" + dbref.key);
   //   }
   const link = window.location.href;
-  
+
   const data = {
-    link
+    link,
   };
 
   useEffect(() => {
     if (localStorage.getItem("type") === "teacher") {
       axios
-        .put(`http://localhost:8000/detail/meeting/update/${id}`, data)
+        .put(
+          `https://chat-app-v2-node-backend.herokuapp.com/detail/meeting/update/${id}`,
+          data
+        )
         .then(() => {
           console.log("Link published");
         })
@@ -47,8 +50,6 @@ const Meeting_page = (props) => {
         });
     }
   }, [id]);
-
-
 
   useEffect(() => {
     navigator.mediaDevices

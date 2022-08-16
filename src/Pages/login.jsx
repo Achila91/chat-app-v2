@@ -10,7 +10,9 @@ const Login = () => {
 
   const signinHandler = () => {
     axios
-      .get(`http://localhost:8000/detail/signin/${username}/${password}`)
+      .get(
+        `https://chat-app-v2-node-backend.herokuapp.com/detail/signin/${username}/${password}`
+      )
       .then((res) => {
         if (res.data === null) {
           alert("Invalid Login");
@@ -18,7 +20,7 @@ const Login = () => {
           navigate("/student");
           localStorage.setItem("teacher", res.data.teacherName);
           localStorage.setItem("type", res.data.type);
-           localStorage.setItem("username", res.data.username);
+          localStorage.setItem("username", res.data.username);
         } else {
           navigate("/teacher");
           localStorage.setItem("username", res.data.username);
